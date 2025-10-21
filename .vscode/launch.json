@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "调试Vue前端",
+            "url": "http://localhost:8000", // 替换为你的酒馆URL
+            "webRoot": "${workspaceFolder}",
+            "sourceMaps": true,
+            "skipFiles": ["node_modules/**"],
+            "trace": true,
+            "sourceMapPathOverrides": {
+                "source://src/*": "${workspaceFolder}/src/*"
+            }
+        }
+    ]
+}
