@@ -16,7 +16,8 @@
         "format": "prettier --write src/",
         "setup-tavern-helper": "node tools/setup-tavern-helper.mjs",
         "build:release": "cross-env BUILD_MODE=release npm run build:main",
-        "build": "npm run build:main && node tools/modify-sourcemap.mjs"
+        "build": "npm run build:main && node tools/modify-sourcemap.mjs",
+        "update-plugin": "npm update @sillytavern-vue-frontend/project-helper --registry https://npm.chlamydomonos.xyz/"
     },
     "dependencies": {
         "@sillytavern-vue-frontend/project-helper": "^1.7.0",
